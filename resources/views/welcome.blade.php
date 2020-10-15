@@ -25,7 +25,7 @@
                     <!-- start header section -->
         <header>
             <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="{{url('/')}}">
                     <img src="/C:\Users\USER\Desktop\bootstrap4\m.png" alt="logo" style="width: 60px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,9 +42,12 @@
             </nav>
         </header>
         <!-- End header section -->
-
-        <div class="main-section">
-            <h2>this is Home page</h2>
+      
+        <div class="content-section">
+            @yield('content')
+        </div>
+        <div class="contact-section">
+            @yield('contact')
         </div>
         </div>
             <!-- bootstrap js cdn -->

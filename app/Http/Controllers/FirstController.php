@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class FirstController extends Controller
 {
-    public function mohim(){
+	   
+        public function mohim(){
     	return view('/dashboard');
     }
         public function about(){

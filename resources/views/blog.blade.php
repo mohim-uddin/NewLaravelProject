@@ -25,7 +25,7 @@
                     <!-- start header section -->
         <header>
             <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="{{url('/')}}">
                     <img src="/C:\Users\USER\Desktop\bootstrap4\m.png" alt="logo" style="width: 60px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

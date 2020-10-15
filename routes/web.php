@@ -15,9 +15,9 @@ use App\Http\Controllers\FirstController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
-
+// Route::get('/home',[FirstController::class,'home']);
 Route::get('/dashboard',[FirstController::class,'mohim']);
 Route::get('/About',[FirstController::class,'about']);
 Route::get('/contact',[FirstController::class,'contact']);
