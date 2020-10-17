@@ -17,14 +17,7 @@ class StudentSeeder extends Seeder
      */
     public function run()
     {
-        for($i=0;$i<10;$i++){
-			student::create([
-            'name'=>Str::random(10),
-            'phone'=>Str::random(),
-            'email'=>Str::random(10).'@gmail.com',
-            'address'=>Str::random(110),
-        ]);
-      }
-
+    	
+    	student::factory()->count(20)->create();
     }
 }
