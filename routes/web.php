@@ -17,6 +17,15 @@ use App\Http\Controllers\FirstController;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/all-pages', function () {
+    echo "this is all post pages";
+});
+ //jdi 30 teke kom hy tahole all page show korbe otherwise single page page show korbe.(note: jodi route hisebe localhost:8000/single-page de o all-page show kore. http://localhost:8000/single-page?age=31 single page show kore jeheto condition false)
+Route::get('/single-page', function () {
+    return view('single-page');
+})->middleware('age');
+
 // Route::get('/home',[FirstController::class,'home']);
 Route::get('/dashboard',[FirstController::class,'mohim']);
 Route::get('/About',[FirstController::class,'about']);
